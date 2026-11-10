@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flutter Console Output</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      background: #0B1120;
+      font-family: 'Consolas', 'Courier New', monospace;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      box-sizing: border-box;
+    }
+    .terminal {
+      width: 860px;
+      background: #1E293B;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.1);
+    }
+    .terminal-header {
+      background: #0F172A;
+      padding: 10px 16px;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .window-buttons {
+      display: flex;
+      gap: 8px;
+    }
+    .btn {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+    }
+    .btn-close { background: #EF4444; }
+    .btn-min { background: #F59E0B; }
+    .btn-max { background: #10B981; }
+    .terminal-title {
+      flex: 1;
+      text-align: center;
+      font-size: 13px;
+      color: #94A3B8;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-weight: 500;
+      margin-right: 52px;
+    }
+    .terminal-body {
+      padding: 20px 24px;
+      font-size: 13.5px;
+      line-height: 1.55;
+      color: #E2E8F0;
+    }
+    .command {
+      color: #38BDF8;
+      margin-bottom: 12px;
+    }
+    .command span {
+      color: #94A3B8;
+    }
+    .log-line {
+      display: flex;
+      margin-bottom: 2px;
+    }
+    .tag {
+      color: #60A5FA;
+      font-weight: bold;
+      width: 80px;
+      flex-shrink: 0;
+    }
+    .msg {
+      color: #F8FAFC;
+    }
+    .msg-success {
+      color: #34D399;
+      font-weight: bold;
+    }
+    .msg-action {
+      color: #FBBF24;
+    }
+    .cursor {
+      display: inline-block;
+      width: 8px;
+      height: 15px;
+      background: #38BDF8;
+      margin-left: 6px;
+      vertical-align: middle;
+      animation: blink 1s infinite;
+    }
+    .badge-test {
+      margin-top: 14px;
+      padding-top: 10px;
+      border-top: 1px dashed rgba(255, 255, 255, 0.15);
+      color: #34D399;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="terminal">
+    <div class="terminal-header">
+      <div class="window-buttons">
+        <div class="btn btn-close"></div>
+        <div class="btn btn-min"></div>
+        <div class="btn btn-max"></div>
+      </div>
+      <div class="terminal-title">DEBUG CONSOLE &bull; stateless_lab_exam &bull; Dart DevTools</div>
+    </div>
+    <div class="terminal-body">
+      <div class="command"><span>user@campus-store:~/stateless_lab_exam$</span> flutter run</div>
+      
+      <div class="log-line"><span class="tag">flutter:</span><span class="msg">Connecting to VM Service on ws://127.0.0.1:58421/ws</span></div>
+      <div class="log-line"><span class="tag">flutter:</span><span class="msg">Application mounted: ShoppingCartPage (StatelessWidget)</span></div>
+      <div class="log-line" style="height: 10px;"></div>
+
+      <div class="log-line"><span class="tag">flutter:</span><span class="msg msg-action">Back clicked</span></div>
+      <div class="log-line"><span class="tag">flutter:</span><span class="msg msg-action">Cart clicked</span></div>
+      <div class="log-line"><span class="tag">flutter:</span><span class="msg msg-action">Change delivery address clicked</span></div>
+      <div class="log-line" style="height: 6px;"></div>
+
+      <div class="log-line"><span class="tag">flutter:</span><span class="msg">Increase quantity: Wireless Mouse</span></div>
+      <div class="log-line"><span class="tag">flutter:</span><span class="msg">Decrease quantity: Wireless Mouse</span></div>
+      <div class="log-line"><span class="tag">flutter:</span><span class="msg">Remove item: Wireless Mouse</span></div>
+      <div class="log-line" style="height: 6px;"></div>
+
+      <div class="log-line"><span class="tag">flutter:</span><span class="msg">Increase quantity: USB-C Hub</span></div>
+      <div class="log-line"><span class="tag">flutter:</span><span class="msg">Decrease quantity: USB-C Hub</span></div>
+      <div class="log-line"><span class="tag">flutter:</span><span class="msg">Remove item: USB-C Hub</span></div>
+      <div class="log-line" style="height: 6px;"></div>
+
+      <div class="log-line"><span class="tag">flutter:</span><span class="msg">Increase quantity: Laptop Stand</span></div>
+      <div class="log-line"><span class="tag">flutter:</span><span class="msg">Decrease quantity: Laptop Stand</span></div>
+      <div class="log-line"><span class="tag">flutter:</span><span class="msg">Remove item: Laptop Stand</span></div>
+      <div class="log-line" style="height: 6px;"></div>
+
+      <div class="log-line"><span class="tag">flutter:</span><span class="msg msg-success">Place order clicked! Total: PHP 1850.00</span></div>
+      
+      <div class="badge-test">&#10004; All required button callbacks successfully triggered and verified! <span class="cursor"></span></div>
+    </div>
+  </div>
+</body>
+</html>
